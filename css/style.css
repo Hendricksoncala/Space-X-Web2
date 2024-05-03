@@ -101,7 +101,7 @@ body{
     justify-content: center;
     align-items: flex-end;
     height: 20vh;
-    gap: 5px;
+    gap: 40px;
     
 }
 .information__buttom a {
@@ -109,7 +109,7 @@ body{
     border: var(--color--two) 1.5px solid;
     border-radius: 7px;
     width: 35%;
-    height: 80%;
+    height: 35%;
     font-size: 0.95em;
     font-weight: bold;
     align-items: center;
@@ -141,44 +141,66 @@ body{
     "section__item__10 section__item__10 section__item__7 section__item__7 section__item__7 section__item__7 . .";
 }
 .section__item__1{
-    background: red;
+    background: var(--color--seven);
     grid-area: section__item__1;
+    border-radius: 20px;
+    margin: 10px;
 }
+
 .section__item__2{
-    background: #d9ff00;
+    background: var(--color--seven);
     grid-area: section__item__2;
+    border-radius: 20px;
+    margin: 10px;
+    
 }
 .section__item__3{
-    background: #00ff84;
+    background: var(--color--seven);
     grid-area: section__item__3;
+    border-radius: 20px;
+    margin: 10px;
 }
 .section__item__4{
-    background: #ff00aa;
+    background: var(--color--seven);
     grid-area: section__item__4;
+    border-radius: 20px;
+    margin: 10px;
 }
 .section__item__5{
-    background: #502a43;
+    background: var(--color--seven);
     grid-area: section__item__5;
+    border-radius: 20px;
+    margin: 10px;
 }
 .section__item__6{
-    background: #00fff7;
+    background: var(--color--seven);
     grid-area: section__item__6;
+    border-radius: 20px;
+    margin: 10px;
 }
 .section__item__7{
-    background: #1900ff;
+    background: var(--color--seven);
     grid-area: section__item__7;
+    border-radius: 20px;
+    margin: 10px;
 }
 .section__item__8{
-    background: #3f42a7;
+    background: var(--color--seven);
     grid-area: section__item__8;
+    border-radius: 20px;
+    margin: 10px;
 }
 .section__item__9{
-    background: #a99020;
+    background: var(--color--seven);
     grid-area: section__item__9;
+    border-radius: 20px;
+    margin: 10px;
 }
 .section__item__10{
     background: #dd3b66;
     grid-area: section__item__10;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .information__item {
