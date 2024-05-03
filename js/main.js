@@ -1,7 +1,8 @@
 import {
     getRocketMassTotal,
     getRocketPayloadWeightsTotal,
-    getRocketHeightTotal
+    getRocketHeightTotal,
+    getRocketDiameterTotal
 } from "./modules/example.js";
 
-console.log(await getRocketHeightTotal())
+console.log(await getRocketDiameterTotal())

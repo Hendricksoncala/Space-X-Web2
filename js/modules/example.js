@@ -89,3 +89,32 @@ export const getRocketHeightTotal = async () => {
     return height
 }
 
+export const getRocketDiameterTotal = async ()=>{
+    let config =  {
+        headers: {
+            "content-type" : "aplication/json"
+        },
+        method: "POST",
+        body: JSON.stringify({
+            "options" :{
+                "select":{
+                    "diameter" : 1
+                },
+                "sort" : {
+                    "diameter.meters" : "desc"
+                }
+            }
+        })
+    }
+    let res = await fetch("https://api.spacexdata.com/v4/rockets/query", config);
+    let {docs: [{diameter} = maxDiameterRocket]} = await res.json();
+    return diameter
+}
+
+export const getRocketSecondStageCompositeFairingDiameterTotal = async ()=> {
+    let config = {
+        headers: {
+            "content-type": "aplication/json"
+        }
+    }
+}
