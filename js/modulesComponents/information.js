@@ -26,4 +26,29 @@ export const informationRockets = async(country, description)=>{
     //         <small>Lorem ipsum dolor sit amet...</small>
     //     </div>
     // </div>
+
+
 }
+
+export const informatonFirstFlightRocket = async(first_flight)=>{
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img')
+    img.setAttribute("src", "storage/img/icons/mech.svg")
+    divFirst.append(img);
+
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "the date of the first flight of the rocket"
+    let small = document.createElement('small');
+    small.textContent = first_flight;
+    divLast.append(h3, small);
+    div.append(divFirst,divLast);
+
+    let description__item = document.querySelector('#descriptio__item')
+    description__item.append(div)
+
+
+}
+
