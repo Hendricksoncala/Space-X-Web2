@@ -45,9 +45,17 @@ export const  informationLaunchCostRocket = async(cost_per_launch) => {
 
     let description__item = document.querySelector('#description__item')
     description__item.append(div)
+
+    // <div class="description__container">
+    //     <div>
+    //         <img src="http://www.example.com">
+    //     </div>
+    //     <div>
+    //         <h3>Title</h3>
+    //         <small>Lorem ipsum dolor sit amet...</small>
+    //     </div>
+    // </div>
 }
-
-
 
 
 export const informatonFirstFlightRocket = async(first_flight)=>{
@@ -80,3 +88,24 @@ export const informatonFirstFlightRocket = async(first_flight)=>{
     // </div>
 }
 
+export const informationWebRocket = async(wikipedia) => {
+    let div =document.createElement('div')
+    div.classList.add('descroiptoion_container');
+    let divFirst = document.createElement('div')
+    let img = document.createElement('img')
+    img.setAttribute("src",  "storage/img/icons/mech.svg")
+    divFirst.apppend(img)
+
+    let divLast = document.createElement('div')
+    let h3 = document.createElement('h3')
+    h3.textContent = "Read more about the coete"
+    let a = document.createElement('a');
+    a.setAttribute("href", wikipedia)
+    a.setAttribute("target", "_blank")
+    a.textContent = "wikipedia"
+    divLast.append(h3, a)
+    div.append(divFirst, divLast);
+    let description__item = document.querySelector("#description_item")
+    description__item.append(div)
+
+}
