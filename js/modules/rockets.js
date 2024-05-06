@@ -170,7 +170,7 @@ export const getAllRocketEngineTotal  = async() =>{
     let {docs:[{engines} = maxEnginesRocket]} = await res.json();
     return engines.thrust_sea_level;
 }
-export const getAllRocketEngineThrustVacuumTotal  = async() =>{
+export const getAllRocketsEngineThrustVacuumTotal  = async() =>{
     let config = {
         headers:{
             "content-type": "application/json"
