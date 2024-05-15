@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceX</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/storage/img/spacexicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
+    <script src="js/main.js" type="module" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="header">
-        <div id="header__title" class="header__title">
-            <div class="load"></div>
-        </div>
+    <header>
+        <div id="header__title"></div>
     </header>
-    <main class="main">
-        <nav class="nav__description">
-            <div id="description__item" class="description__item">
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-            </div>
-            <div class="description__buttom">
-                <!-- <a href="#">a</a>
-                <a href="#">b</a> -->
-            </div>
-        </nav>
-        <section class="main__section">
-            <article id="section__information__1" class="section__information__1">
-                <div class="load" style="height: 150px;"></div>
+    
+    <main>
+
+        <div id="container3D"></div>
+
+        <div class="leftpart">
+
+            <article class="left" id="description__item">
+
             </article>
+        </div>
+        
+        <aside>
+            <article id="section__information__1" class="section__information__1">
+                <div class="load"></div>
+            </article>
+
             <article class="section__information__container">
                 <div class="section__information__2">
                     <div>
@@ -84,96 +82,81 @@
                     </div>
                 </div>
             </article>
-            <footer class="footer">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="http://www.example.com">
-                            <span>a</span>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
-        </section>
-        <nav class="nav__information">
-            <div id="information__2" class="information__item">
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-                <div class="load"></div>
-            </div>
-            <div id="paginacion" class="information__buttom">
-                <div class="load"></div>
-            </div>
-        </nav>
+        </aside>
+
+        <div class="rightpart">
+
+            <nav class="right" id="information__2">
+
+            </nav>
+            
+        </div>
+        
     </main>
+    <footer>
+        <div class="footerline"></div>
+        <img src="storage/img/footercontainerc.png" class="footercontainer">
 
-    
-    <!-- Check icons -->
-    <!-- <i class='bx bxs-check-circle' style='color:#9499c3'  ></i>
-    <i class='bx bxs-check-circle' style='color:#40c110'  ></i>
-    <i class='bx bxs-check-circle' style='color:#ea7b15'  ></i> -->
 
-    <!-- Nav icons -->
-    <!-- <img src="storage/img/icons/rocket.svg">
-    <i class='bx bx-body' style='color:#e72d2d'></i>
-    <img src="storage/img/icons/comms.svg">
-    <img src="storage/img/icons/prop.svg">
-    <img src="storage/img/icons/mech.svg">
-    <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'  ></i>
-    <i class='bx bxs-chip' style='color:#ffffff'  ></i>
-    <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'  ></i>
-    <i class='bx bxs-brightness-half' style="color: #fff"></i>  -->
-    
+        <div class="footerleft">
+            <div class="downleftcontainer">
+                <div class="systemsdiv"><p>SYSTEMS</p></div>
+                <div class="cabindiv"><p>CABIN</p></div>
+            </div>
+        </div>
+        <div class="footercenter">
+
+            <div class="centericon">
+                <img src="storage/img/rocket.svg">
+                <p>Overview</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/person.svg">
+                <p>Life</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/comms.svg">
+                <p>Comms</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/Prop.svg">
+                <p>Prop</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/Mech.svg">
+                <p>Mech</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/power.svg">
+                <p>Power</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/Avionics.svg">
+                <p>Avionics</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/GNC.svg">
+                <p>GNC</p>
+            </div>
+
+            <div class="centericon">
+                <img src="storage/img/Thermal.svg">
+                <p>Thermal</p>
+            </div>
+
+        </div>
+        <div class="footerright">
+                <div id="paginacion" class="information__buttom">
+                    <div class="load"></div>
+                </div>
+        </div>
+    </footer>
 </body>
 </html>
-
