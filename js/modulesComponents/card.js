@@ -11,5 +11,7 @@ export const imageRockets = async(flickr_images)=>{
         divs.push(div);
     });
     section__image.append(...divs)
-
+    // <div class="carousel__item">
+    //     <img src="https://farm5.staticflickr.com/4599/38583829295_581f34dd84_b.jpg" referrerpolicy="no-referrer">
+    // </div>
 }
