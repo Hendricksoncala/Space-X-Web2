@@ -1,4 +1,5 @@
-export const tableRocketColum1 = async (Rocket) => {
+export const tableRocketColum1 = async (Rocket)=>{
+
     let information__table__1 = document.querySelector("#information__table__1");
     information__table__1.innerHTML = "";
     let h3 = document.createElement("h3");
@@ -58,8 +59,18 @@ export const tableRocketColum1 = async (Rocket) => {
 
     div.append(div4, div1, div2, div3, div5, div6)
     information__table__1.append(div)
-}
+    // 
 
+    // <h3>Title</h3>
+    // <hr>
+    // <div class="table__container__1">
+    //     <div>
+    //         <span>Title</span>
+    //         <strong>Hola</strong>
+    //     </div>
+        
+    // </div>
+}
 export const tableRocketColum2 = async (Rocket)=>{
     let information__table__2 = document.querySelector("#information__table__2");
     information__table__2.innerHTML = "";
@@ -120,4 +131,178 @@ export const tableRocketColum2 = async (Rocket)=>{
 
     div.append(div6, div1, div2, div3, div4, div5)
     information__table__2.append(div)
+    // 
+
+    // <h3>Title</h3>
+    // <hr>
+    // <div class="table__container__1">
+    //     <div>
+    //         <span>Title</span>
+    //         <strong>Hola</strong>
+    //     </div>
+        
+    // </div>
+}
+
+
+//============================================================
+
+export const tableCapsuleColum1 = async (Capsule)=>{
+
+    let section__information__1 = document.querySelector("#section__information__1");
+    section__information__1.innerHTML = "";   
+    let h3 = document.createElement("h3");
+    h3.textContent = "Landings Capsule"
+    let hr = document.createElement("hr");
+    section__information__1.append(h3, hr)
+
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+    // 
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.textContent = "Capsule water landings"
+    let strong1 = document.createElement("strong");
+    strong1.textContent = `${Capsule.water_landings}`
+    div1.append(span1, strong1)
+
+    // 
+    let div2 = document.createElement("div");
+    let span2 = document.createElement("span");
+    span2.textContent = "Capsule land landings"
+    let strong2 = document.createElement("strong");
+    strong2.textContent = `${Capsule.land_landings}`
+    div2.append(span2, strong2)
+    
+    // 
+    let div3 = document.createElement("div");
+    let span3 = document.createElement("span");
+    span3.textContent = "Capsule reuse count"
+    let strong3 = document.createElement("strong");
+    strong3.textContent = `${Capsule.reuse_count}`
+    div3.append(span3, strong3)
+
+    div.append(div1, div2, div3)
+    section__information__1.append(div)
+
+    let information__table__1 = document.querySelector("#information__table__1")
+    information__table__1.innerHTML = "";
+    let information__table__2 = document.querySelector("#information__table__2")
+    information__table__2.innerHTML = "";
+    
+}
+
+//============================================================
+
+export const tableLaunchesColum1 = async (Launch)=>{
+    let information__table__1 = document.querySelector("#information__table__1");
+    information__table__1.innerHTML = "";
+    let h3 = document.createElement("h3");
+    h3.textContent = "Dates information"
+    let hr = document.createElement("hr");
+    information__table__1.append(h3, hr)
+
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+    // 
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.textContent = "date_utc"
+    let strong1 = document.createElement("strong");
+    strong1.textContent = `${Launch.date_utc}`
+    div1.append(span1, strong1)
+
+    // 
+    let div2 = document.createElement("div");
+    let span2 = document.createElement("span");
+    span2.textContent = "date_unix"
+    let strong2 = document.createElement("strong");
+    strong2.textContent = `${Launch.date_unix}`
+    div2.append(span2, strong2)
+
+    // 
+    let div3 = document.createElement("div");
+    let span3 = document.createElement("span");
+    span3.textContent = "date_local"
+    let strong3 = document.createElement("strong");
+    strong3.textContent = `${Launch.date_local}`
+    div3.append(span3, strong3)
+
+    // 
+    let div4 = document.createElement("div");
+    let span4 = document.createElement("span");
+    span4.textContent = "date_precision"
+    let strong4 = document.createElement("strong");
+    strong4.textContent = `${Launch.date_precision}`
+    div4.append(span4, strong4)
+
+    // 
+    let div5 = document.createElement("div");
+    let span5 = document.createElement("span");
+    span5.textContent = "upcoming"
+    let strong5 = document.createElement("strong");
+    strong5.textContent = `${Launch.upcoming}`
+    div5.append(span5, strong5)
+
+    div.append(div1, div2, div3, div4, div5)
+    information__table__1.append(div)
+    // 
+
+    // <h3>Title</h3>
+    // <hr>
+    // <div class="table__container__1">
+    //     <div>
+    //         <span>Title</span>
+    //         <strong>Hola</strong>
+    //     </div>
+        
+    // </div>
+}
+
+//=====================================================
+
+export const tableDragon1 = async (Dragons)=>{
+    let information__table__1 = document.querySelector("#information__2");
+    information__table__1.innerHTML = "";
+    let h3 = document.createElement("h3");
+    h3.textContent = "heat shield"
+    let hr = document.createElement("hr");
+    information__table__1.append(h3, hr)
+
+    let div = document.createElement("div");
+    div.classList.add("table__container__1");
+    // 
+    let div1 = document.createElement("div");
+    let span1 = document.createElement("span");
+    span1.textContent = "material"
+    let strong1 = document.createElement("strong");
+    strong1.textContent = `${Dragons.material}`
+    div1.append(span1, strong1)
+
+    // 
+    let div2 = document.createElement("div");
+    let span2 = document.createElement("span");
+    span2.textContent = "size_meters"
+    let strong2 = document.createElement("strong");
+    strong2.textContent = `${Dragons.size_meters}`
+    div2.append(span2, strong2)
+
+    // 
+    let div3 = document.createElement("div");
+    let span3 = document.createElement("span");
+    span3.textContent = "temp_degrees"
+    let strong3 = document.createElement("strong");
+    strong3.textContent = `${Dragons.temp_degrees}`
+    div3.append(span3, strong3)
+
+    // 
+    let div4 = document.createElement("div");
+    let span4 = document.createElement("span");
+    span4.textContent = "dev_partner"
+    let strong4 = document.createElement("strong");
+    strong4.textContent = `${Dragons.dev_partner}`
+    div4.append(span4, strong4)
+
+    div.append(div1, div2, div3, div4)
+    information__table__1.append(div)
 }
