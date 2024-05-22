@@ -1100,3 +1100,146 @@ export const informationNameLand = async (full_name) => {
 
     section__information__1.append(div)
 }
+
+export const informationStatusLand = async (status) => {
+    let section__information__1 = document.querySelector("#description__item")
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", "/storage/img/icons/iconos/mech.svg")
+    divFirst.append(img);
+    
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "Status"
+    let small = document.createElement('small');
+    small.textContent = status
+    divLast.append(h3, small);
+    div.append(divFirst, divLast);
+
+    section__information__1.append(div)
+}
+
+export const informationTypeLand = async (type) => {
+    let section__information__1 = document.querySelector("#description__item")
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", "/storage/img/icons/iconos/mech.svg")
+    divFirst.append(img);
+    
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "type"
+    let small = document.createElement('small');
+    small.textContent = type
+    divLast.append(h3, small);
+    div.append(divFirst, divLast);
+
+    section__information__1.append(div)
+}
+
+export const informationWikiLand = async(wikipedia)=>{
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", "/storage/img/icons/iconos/mech.svg")
+    divFirst.append(img);
+    
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "Read more about the landpad"
+    let a = document.createElement('a');
+    a.setAttribute("href", wikipedia)
+    a.setAttribute("target", "_blank")
+    a.textContent = "Wikipedia"
+    divLast.append(h3, a);
+    div.append(divFirst, divLast);
+    let description__item = document.querySelector("#description__item")
+    description__item.append(div)
+}
+
+export const informationAttemptLand = async (landing_attempts) => {
+    let section__information__1 = document.querySelector("#information__table__2")
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", "/storage/img/icons/iconos/mech.svg")
+    divFirst.append(img);
+    
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "landing_attempts"
+    let small = document.createElement('small');
+    small.textContent = landing_attempts
+    divLast.append(h3, small);
+    div.append(divFirst, divLast);
+
+    section__information__1.append(div)
+}
+
+export const informationSuccesesLand = async (landing_successes) => {
+    let section__information__1 = document.querySelector("#information__table__2")
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", "/storage/img/icons/iconos/mech.svg")
+    divFirst.append(img);
+    
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "landing_successes"
+    let small = document.createElement('small');
+    small.textContent = landing_successes
+    divLast.append(h3, small);
+    div.append(divFirst, divLast);
+
+    section__information__1.append(div)
+}
+
+//=====================================================
+
+export const informationAttemptLaunch = async (launch_attempts) => {
+    let section__information__1 = document.querySelector("#information__table__2")
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", "/storage/img/icons/iconos/mech.svg")
+    divFirst.append(img);
+    
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "landing_attempts"
+    let small = document.createElement('small');
+    small.textContent = launch_attempts
+    divLast.append(h3, small);
+    div.append(divFirst, divLast);
+
+    section__information__1.append(div)
+}
+
+export const informationSuccesesLaunch = async (launch_successes) => {
+    let section__information__1 = document.querySelector("#information__table__2")
+    let div = document.createElement('div');
+    div.classList.add('description__container')
+    let divFirst = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute("src", "/storage/img/icons/iconos/mech.svg")
+    divFirst.append(img);
+    
+    let divLast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.textContent = "launch_successes"
+    let small = document.createElement('small');
+    small.textContent = launch_successes
+    divLast.append(h3, small);
+    div.append(divFirst, divLast);
+
+    section__information__1.append(div)
+}
