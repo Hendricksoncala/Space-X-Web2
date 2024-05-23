@@ -248,7 +248,7 @@ body {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     transform: rotate(-55deg);
-    background-image: url(./storage/img/icons/iconos/astronauta.png);
+    background-image: url(./storage/img/icons/iconos/astronauta.webp);
 }
 @keyframes flo{
 50%{
@@ -322,7 +322,7 @@ body {
 }
 
 .footer {
-    background-image: linear-gradient(#841b9cab, #ad0dc5), url(../storage/img/icons/iconos/universo-violeta.jpg);
+    background-image:  url(../storage/img/icons/iconos/universo-violeta.jpg);
     box-shadow: 1px 1px 6px 6px #05264d;
     border-top-left-radius: 1000px;
     border-top-right-radius: 1000px;
