@@ -4,7 +4,7 @@ import {
 } from "../modules/rockets.js";
 import { 
     nameRockets 
-} from "./name.js";
+} from "./title.js";
 import { 
     infoName,
     informationRockets,

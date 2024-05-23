@@ -5,158 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceX</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="/storage/img/spacexicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" type="module" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <div id="header__title"></div>
-    </header>
-    
-    <main>
-
-        <div id="container3D"></div>
-
-        <div class="leftpart">
-
-            <article class="left" id="description__item">
-
-            </article>
+    <header class="header">
+        <div id="header__title" class="header__title">
         </div>
-        
-        <aside>
-            <article id="section__information__1" class="section__information__1">
+    </header>
+    <main class="main">
+        <nav class="nav__description">
+            <div id="description__item" class="description__item">
                 <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+            </div>
+            <div class="description__buttom">
+                <!-- <a href="#">a</a>
+                <a href="#">b</a> -->
+            </div>
+        </nav>
+        <section class="main__section">
+            <article id="section__information__1" class="section__information__1">
+                <div class="load" style="height: 150px;"></div>
             </article>
-
             <article class="section__information__container">
-                <div class="section__information__2">
+                <div  class="section__information__2">
                     <div>
-                        <div class="carousel__item">
-                            <div class="item__progress__bar">
-                                <div class="progress__value">
-                                    <strong>Title</strong>
-                                    <small>3</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel__item">
-                            <div class="item__progress__bar">
-                                <div class="progress__value">
-                                    <strong>Title</strong>
-                                    <small>3</small>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div id="information__table__1" class="information__table__1">
                         <div class="load" style="height: 160px;"></div>
                     </div>
                 </div>
                 <div id="section__image" class="section__image">
-                    <div class="load" style="height: 350px"></div>
+                    <div class="rocket">
+                        <img class="rocketimg" src="./storage/img/icons/iconos/sticker-png-astronaut-cartoon-astronaut-drawing-space-line-art-gesture.svg">
+                    </div>
                 </div>
                 <div class="section__information__3">
                     <div>
-                        <div class="carousel__item">
-                            <div class="item__progress__bar">
-                                <div class="progress__value">
-                                    <strong>Title</strong>
-                                    <small>3</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel__item">
-                            <div class="item__progress__bar">
-                                <div class="progress__value">
-                                    <strong>Title</strong>
-                                    <small>3</small>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div id="information__table__2" class="information__table__2">
                         <div class="load" style="height: 160px;"></div>
                     </div>
                 </div>
             </article>
-        </aside>
-
-        <div class="rightpart">
-
-            <nav class="right" id="information__2">
-
-            </nav>
-            
-        </div>
-        
+            <footer class="footer">
+                <ul>
+                    <li id="rocket">
+                        <a class="select" href="#">
+                            <img src="./storage/img/icons/iconos/rocket.svg">
+                            <span>Rocket</span>
+                        </a>
+                    </li>
+                    <li id="capsules">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/life.svg">
+                            <span>Capsule</span>
+                        </a>
+                    </li>
+                    <li id="launches">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/comms.svg">
+                            <span>Launches</span>
+                        </a>
+                    </li>
+                    <li id="Crew">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/prop.svg">
+                            <span>Crew</span>
+                        </a>
+                    </li>
+                    <li id="Cores">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/mech.svg">
+                            <span>Cores</span>
+                        </a>
+                    </li>
+                    <li id="Dragons">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/power.svg">
+                            <span>Dragons</span>
+                        </a>
+                    </li>
+                    <li id="History">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/avionics.svg">
+                            <span>History</span>
+                        </a>
+                    </li>
+                    <li id="Landpads">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/gnc.svg">
+                            <span>Landpads</span>
+                        </a>
+                    </li>
+                    <li id="Launchpads">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/thermal.svg">
+                            <span>Launchpads</span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+        <nav class="nav__information">
+            <div id="information__2" class="information__item">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+            </div>
+            <div id="paginacion" class="information__buttom"></div>
+        </nav>
     </main>
-    <footer>
-        <div class="footerline"></div>
-        <img src="storage/img/icons/iconos/footercontainerc.png" class="footercontainer">
 
+    
+    <!-- Check icons -->
+    <!-- <i class='bx bxs-check-circle' style='color:#9499c3'  ></i>
+    <i class='bx bxs-check-circle' style='color:#40c110'  ></i>
+    <i class='bx bxs-check-circle' style='color:#ea7b15'  ></i> -->
 
-        <div class="footerleft">
-            <div class="downleftcontainer">
-                <div class="systemsdiv"><p>SYSTEMS</p></div>
-                <div class="cabindiv"><p>CABIN</p></div>
-            </div>
-        </div>
-        <div class="footercenter">
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/rocket.svg">
-                <p>Overview</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/person.svg">
-                <p>Life</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/comms.svg">
-                <p>Comms</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/prop.svg">
-                <p>Prop</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/mech.svg">
-                <p>Mech</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/power.svg">
-                <p>Power</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/Avionics.svg">
-                <p>Avionics</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/GNC.svg">
-                <p>GNC</p>
-            </div>
-
-            <div class="centericon">
-                <img src="storage/img/icons/iconos/thermal.svg">
-                <p>Thermal</p>
-            </div>
-
-        </div>
-        <div class="footerright">
-                <div id="paginacion" class="information__buttom">
-                    <div class="load"></div>
-                </div>
-        </div>
-    </footer>
+    <!-- Nav icons -->
+    <!-- <img src="storage/img/icons/rocket.svg">
+    <i class='bx bx-body' style='color:#e72d2d'></i>
+    <img src="storage/img/icons/comms.svg">
+    <img src="storage/img/icons/prop.svg">
+    <img src="storage/img/icons/mech.svg">
+    <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'  ></i>
+    <i class='bx bxs-chip' style='color:#ffffff'  ></i>
+    <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'  ></i>
+    <i class='bx bxs-brightness-half' style="color: #fff"></i>  -->
+    
+    
 </body>
 </html>
